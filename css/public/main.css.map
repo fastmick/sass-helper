@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,IAAK;EACH,UAAU,ECDF,IAAK",
+"sources": ["../scss/_project.scss","../scss/_color.scss"],
+"names": [],
+"file": "main.css"
+}

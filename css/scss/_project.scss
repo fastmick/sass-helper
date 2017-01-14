@@ -1,0 +1,63 @@
+@import "base-import";
+@import "mixins-import";
+
+
+
+
+
+
+/* Custom CSS
+   ========================================================================== */
+  
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}  
+  
+  
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+ } 
+
+ 
+body {
+  @include font-size($base__font-size);
+  background: $bg-body;
+  font-family: $base__font-family;
+  line-height: $base__line-height;
+}
+
+.container {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  position: relative;
+}
+
+
+
+.content {
+  margin-bottom: 30px;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;     
+}
+
+.example {
+  border: 1px solid #ccc;
+  margin-bottom: 30px;  
+  padding: 20px;
+}

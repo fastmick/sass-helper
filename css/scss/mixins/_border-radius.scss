@@ -1,0 +1,13 @@
+@mixin border-radius($size , $diff-sizes: false, $top-left: $size, $top-right: $size, $bottom-right: $size, $bottom-left: $size) {
+  $value: #{$size};
+  
+  
+  @if $diff-sizes == false {
+    -moz-border-radius: $value;
+    -webkit-border-radius: $value;
+    border-radius: $value;
+  } @else {
+    border-radius: $top-left $top-right $bottom-right $bottom-left;
+  }
+} 
+
