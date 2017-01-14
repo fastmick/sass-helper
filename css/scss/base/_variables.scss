@@ -1,0 +1,53 @@
+// font family
+$base__font-family: Arial;
+
+// font-sizes / line-height
+// wird ohne Einheit angegeben - diese wird im mixin _font-size gesetzt
+$base__line-height: 1.3;
+$base__font-size: 16;
+
+$font-size-h1: 34;
+$font-size-h2: 28;
+$font-size-h3: 22;
+$font-size-h4: 16;
+$font-size-h5: 14;
+$font-size-h6: 12;
+
+//colors
+$white: #fff;
+
+$green: #0f0;
+$green-dark: darken($green, 20%);
+
+$red: #f00;
+
+$blue: #00f;
+
+$grey: #999;
+
+$black: #000;
+$black-light: lighten($black, 40%);
+$black-lighter: lighten($black, 85%);
+
+
+
+
+$bg-body: $grey;
+
+// main navigation
+$color-link-main-nav: $black-light;
+$color-link-hover-main-nav: $black;
+$color-border-item-main-nav: $black-light;
+$color-bg-item-main-nav: $black-lighter;
+
+// lists (font awesome)
+$color-checked-icon: $green-dark;
+
+
+
+
+
+
+
+
+

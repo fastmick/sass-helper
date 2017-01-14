@@ -1,0 +1,14 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w scss/ -o public",
+    "scss-debug": "node-sass --source-comments -w scss/ -o public",
+    "scss-compressed": "node-sass --output-style compressed -w scss/ -o public"
+  },
+  "author": "",
+  "license": "ISC"
+}
