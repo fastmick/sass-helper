@@ -1,0 +1,30 @@
+// headlines
+h1 {
+  @include font-size-heading($font-size-h1);
+  margin-top: 0;
+}
+
+h2 {
+  @include font-size-heading($font-size-h2);
+}
+
+h3 {
+  @include font-size-heading($font-size-h3);
+}
+
+h4 {
+  @include font-size-heading($font-size-h4);
+}
+
+h5 {
+  @include font-size-heading($font-size-h5);
+}
+
+h6 {
+  @include font-size-heading($font-size-h6);
+}
+
+// normal text
+p {
+  margin-bottom: 20px;
+}

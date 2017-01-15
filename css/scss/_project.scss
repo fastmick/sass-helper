@@ -1,6 +1,6 @@
 @import "base-import";
 @import "mixins-import";
-
+@import "components-import";
 
 
 
@@ -44,6 +44,63 @@ body {
 .content {
   margin-bottom: 30px;
 }
+
+.teaser {
+  @include clearfix;
+  margin-bottom: 25px;
+  
+  &__item {
+     border: 1px solid #999;  
+     padding: 20px;
+     text-align: center;
+     
+    .row-1 & {
+      width: 100%;
+      
+      @include breakpoint(phablet) {
+        @include grid(4);
+      }
+    }
+    
+    .row-2 & {
+      
+      &:nth-child(1) {
+        @include grid(3);
+      }
+      
+      &:nth-child(2) {
+        @include grid(7);
+      }
+      
+      &:nth-child(3) {
+        @include grid(2);
+      }
+    
+    }
+    
+    .row-3 & {
+      
+      &:nth-child(1) {
+        @include grid(5);
+      }
+      
+      &:nth-child(2) {
+        @include grid(5,2);
+      }
+    
+    }
+    
+  }
+}
+
+
+
+
+
+
+
+
+
 
 .visuallyhidden {
   border: 0;
