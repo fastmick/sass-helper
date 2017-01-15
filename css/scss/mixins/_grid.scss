@@ -1,0 +1,16 @@
+@mixin grid($grid-cols, $push: 0, $grid: 12) {
+  float: left;
+  position: relative;
+
+  $col-width: (100 / $grid) * $grid-cols;
+  $col-width-percent: $col-width * 1%;
+  width: $col-width-percent;
+
+  @if $push > 0 {
+    $margin-width: (100 / $grid) * $push;
+    $margin-width-percent: $margin-width * 1%;
+    margin-left: $margin-width-percent;
+  } @else {
+    margin-left: 0;
+  }
+}
